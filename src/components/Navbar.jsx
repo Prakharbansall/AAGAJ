@@ -35,7 +35,8 @@ function Navbar({ page, setPage }) {
           className="text-cream font-extrabold tracking-wide text-base md:text-lg flex items-center gap-2 focus:outline-none"
           onClick={() => handleNav(PAGES.HOME)}
         >
-          <img src="./src/logo.png" className="h-35 w-40"></img>
+          <img src="/logo.svg" alt="AAGAJ logo" className="h-8 w-8 md:h-9 md:w-9" />
+          <span className="hidden sm:inline">AAGAJ Finance</span>
         </button>
 
         <div className="hidden md:flex items-center gap-4">
