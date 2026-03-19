@@ -93,31 +93,6 @@ function About({ setPage }) {
 
       </section>
 
-      {/* STATS */}
-      <section className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-          {[
-            { value: "20+", label: "Projects Delivered" },
-            { value: "8+", label: "Fintech Domains" },
-            { value: "10+", label: "Engineering Partners" },
-            { value: "24/7", label: "System Monitoring" }
-          ].map((stat, i) => (
-            <div
-              key={i}
-              className="glass-panel rounded-xl p-6 text-center"
-            >
-              <div className="text-3xl font-bold text-gold">
-                {stat.value}
-              </div>
-              <div className="text-sm text-gray-300 mt-1">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-
-        </div>
-      </section>
 
       {/* PROCESS */}
       <section className="max-w-7xl mx-auto px-4">

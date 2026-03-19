@@ -92,9 +92,6 @@ function Team({ setPage }) {
 
               </div>
 
-              <p className="text-xs text-gray-400 mt-auto">
-                10+ years experience across fintech platforms and regulated payment systems.
-              </p>
 
             </article>
 

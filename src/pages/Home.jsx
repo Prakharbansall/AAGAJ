@@ -65,7 +65,7 @@ function Home({ setPage }) {
               <p className="mt-5 text-gray-300 max-w-xl leading-relaxed">
                 We help fintech teams across India design, build, and improve
                 platforms spanning payments, infrastructure, and regulatory
-                technology—focused on outcomes, reliability, and speed.
+                technology-focused on outcomes, reliability, and speed.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3">

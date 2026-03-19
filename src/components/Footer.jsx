@@ -53,7 +53,12 @@ function Footer({ page, setPage }){
     Contact
     </h3>
     
+<<<<<<< HEAD
     <p>Email:  contact@aagajtech.in</p> 
+=======
+    <p>Email: contact@aagajtech.in</p>
+    <p>Phone: +91 79 XXXX XXXX</p>
+>>>>>>> a421a3818c5d553d3e917a5ac8438b187d27633e
     
     </div>
     
