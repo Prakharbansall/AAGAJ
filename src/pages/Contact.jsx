@@ -161,16 +161,7 @@ function Contact() {
 
                 <p>
                   <span className="text-muted">Email:</span>{" "}
-<<<<<<< HEAD
                   <span className="text-cream"> contact@aagajtech.in</span>
-=======
-                  <span className="text-cream">contact@aagajtech.in</span>
-                </p>
-
-                <p>
-                  <span className="text-muted">Phone:</span>{" "}
-                  <span className="text-cream">+91 79 XXXX XXXX</span>
->>>>>>> a421a3818c5d553d3e917a5ac8438b187d27633e
                 </p>
 
                 <p className="text-xs text-gray-400">
