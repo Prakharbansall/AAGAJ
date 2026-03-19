@@ -53,8 +53,7 @@ function Footer({ page, setPage }){
     Contact
     </h3>
     
-    <p>Email: info@aagajfintech.com</p>
-    <p>Phone: +91 79 XXXX XXXX</p>
+    <p>Email:  contact@aagajtech.in</p> 
     
     </div>
     

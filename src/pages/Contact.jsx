@@ -154,19 +154,14 @@ function Contact() {
               </h2>
 
               <p className="text-gray-300 mb-3">
-                Prefer email or phone? Reach out directly.
+                Prefer email ? Reach out directly.
               </p>
 
               <div className="space-y-2">
 
                 <p>
                   <span className="text-muted">Email:</span>{" "}
-                  <span className="text-cream">info@aagajfintech.com</span>
-                </p>
-
-                <p>
-                  <span className="text-muted">Phone:</span>{" "}
-                  <span className="text-cream">+91 79 XXXX XXXX</span>
+                  <span className="text-cream"> contact@aagajtech.in</span>
                 </p>
 
                 <p className="text-xs text-gray-400">

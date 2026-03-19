@@ -40,6 +40,20 @@ const categories = ["All", "Payments", "RegTech", "Engineering", "Architecture"]
 import { PAGES } from "../App";
 
 function Blog({ setPage }) {
+
+  const [subscribed, setSubscribed] = useState(false);
+const [loading, setLoading] = useState(false);
+
+
+  const handleClick = () => {
+    setLoading(true);
+
+    setTimeout(() => {
+      setSubscribed(true);
+      setLoading(false);
+    }, 1000); // 2000 ms = 2 seconds
+  };
+
   const [active, setActive] = useState("All");
 
   const filtered =
@@ -151,10 +165,13 @@ function Blog({ setPage }) {
                 className="w-full mb-3 px-3 py-2 rounded-lg bg-black/20 border border-gold/20 text-sm"
               />
 
-              <button className="btn-gold px-4 py-2 w-full text-sm">
-                Subscribe
-              </button>
-
+<button
+      className="btn-gold px-4 py-2 w-full text-sm"
+      onClick={handleClick}
+      disabled={loading || subscribed}
+    >
+      {loading ? "Subscribing..." : subscribed ? "Subscribed 🎉" : "Subscribe"}
+    </button>
             </div>
 
             {/* Topics */}

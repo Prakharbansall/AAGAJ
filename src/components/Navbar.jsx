@@ -14,7 +14,7 @@ function Navbar({ page, setPage }) {
   }, [dark]);
 
   const links = [
-    ["Home", PAGES.HOME],
+    ["Home",PAGES.HOME],
     ["About", PAGES.ABOUT],
     ["Services", PAGES.SERVICES],
     ["Products", PAGES.PRODUCTS],
@@ -31,13 +31,15 @@ function Navbar({ page, setPage }) {
   return (
     <nav className="bg-[rgba(4,7,23,0.90)] backdrop-blur-md border-b border-gold/20 sticky top-0 z-50 shadow-lg shadow-black/20">
       <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center gap-3">
-        <button
+        <a
+          href="https://aagajtech.in/"
+          target="_blank"
+          rel="noreferrer"
           className="text-cream font-extrabold tracking-wide text-base md:text-lg flex items-center gap-2 focus:outline-none"
-          onClick={() => handleNav(PAGES.HOME)}
         >
           <img src="/logo.svg" alt="AAGAJ logo" className="h-8 w-8 md:h-9 md:w-9" />
           <span className="hidden sm:inline">AAGAJ Finance</span>
-        </button>
+        </a>
 
         <div className="hidden md:flex items-center gap-4">
           {links.map(([label, p]) => (
