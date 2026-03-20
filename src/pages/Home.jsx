@@ -171,7 +171,7 @@ function Home({ setPage }) {
               Services that improve product velocity
             </h2>
             <p className="text-gray-400 mt-2 max-w-2xl">
-              Practical engineering and advisory—designed for fintech realities:
+              Practical engineering and advisory-designed for fintech realities:
               integrations, risk, audits, and strict reliability needs.
             </p>
           </div>
@@ -194,7 +194,7 @@ function Home({ setPage }) {
               <p className="text-gray-300/90 text-sm mt-2 leading-relaxed">
                 {f.desc}
               </p>
-              <div className="mt-5 text-sm text-gold group-hover:text-gold-light transition">
+              <div onClick={() => setPage(PAGES.SERVICES)} className="mt-5 text-sm text-gold group-hover:text-gold-light transition cursor-pointer">
                 Learn more →
               </div>
             </div>
@@ -210,7 +210,7 @@ function Home({ setPage }) {
             </h2>
             <p className="text-gray-300/90 mt-3 leading-relaxed max-w-xl">
               Fintech work is never “just code”. We align stakeholders, map
-              risk, prioritize the right work, and make progress visible—so your
+              risk, prioritize the right work, and make progress visible-so your
               team can move confidently.
             </p>
 
@@ -238,14 +238,14 @@ function Home({ setPage }) {
             </div>
             <p className="mt-3 text-sm text-gray-300/90 leading-relaxed">
               We keep delivery predictable: small batches, measurable outcomes,
-              and consistent communication—especially valuable when compliance
+              and consistent communication-especially valuable when compliance
               or partner dependencies are involved.
             </p>
 
             <div className="mt-6 grid sm:grid-cols-2 gap-4">
               {[
-                { k: "Kickoff", v: "1–2 weeks" },
-                { k: "First delivery", v: "2–6 weeks" },
+                { k: "Kickoff", v: "1-2 weeks" },
+                { k: "First delivery", v: "2-6 weeks" },
                 { k: "Ongoing", v: "Monthly" },
                 { k: "Engagement", v: "Flexible" },
               ].map((x) => (

@@ -23,7 +23,7 @@ const POSTS = [
     read: "7 min read",
     date: "January 2026",
     teaser:
-      "Signals that your current system is slowing delivery—and ways to improve without a risky full rewrite.",
+      "Signals that your current system is slowing delivery-and ways to improve without a risky full rewrite.",
   },
   {
     title: "How embedded finance platforms scale",

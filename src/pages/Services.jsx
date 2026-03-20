@@ -202,7 +202,7 @@ function Services({ setPage }) {
 
             <div className="border border-gold/15 p-4 rounded-lg">
               <div className="text-gold font-semibold mb-1">
-                Week 1–2
+                Week 1-2
               </div>
               <div className="text-gray-300">
                 Product alignment and technical risk mapping.
@@ -211,7 +211,7 @@ function Services({ setPage }) {
 
             <div className="border border-gold/15 p-4 rounded-lg">
               <div className="text-gold font-semibold mb-1">
-                Week 3–6
+                Week 3-6
               </div>
               <div className="text-gray-300">
                 Architecture planning and API validation.
