@@ -41,7 +41,7 @@ function Footer({ page, setPage }) {
             AAGAJ Fintech Consultancy Pvt Ltd
           </h3>
 
-          <p>206 Rajkamal Plaza A Navjivan Ahmedabad Gujarat India</p>
+          <p>206 Rajkamal Plaza-A,satar,Soc.,Nr Income tax Circle, Navjivan Ahmedabad Ahmedabad city Gujarat India, 380014</p>
         </div>
 
         {/* QUICK LINKS */}
