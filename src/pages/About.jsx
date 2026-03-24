@@ -17,10 +17,9 @@ function About({ setPage }) {
           </h1>
 
           <p className="text-gray-300 leading-relaxed text-lg">
-            AAGAJ Fintech Consultancy helps financial institutions, fintech
-            startups, and platform teams design, build, and scale modern
-            financial technology platforms with reliability, compliance,
-            and operational clarity.
+            AAGAJ Fintech partners with financial institutions, fintech startups,
+            and platform teams to design, build, and scale modern financial
+            systems—combining deep engineering with a strong product mindset.
           </p>
         </div>
       </section>
@@ -32,28 +31,27 @@ function About({ setPage }) {
           <p>
             Financial systems are complex environments where product decisions,
             engineering architecture, and regulatory requirements intersect.
-            Our work focuses on helping organisations navigate that complexity
-            without slowing down innovation.
+            Our work focuses on simplifying that complexity while maintaining
+            speed, control, and reliability.
           </p>
 
           <p>
-            We collaborate closely with product teams, technology leaders,
-            and operations teams to ensure systems are built not only to
-            launch quickly, but also to remain stable and maintainable as
-            the business grows.
+            We work closely with product leaders, engineering teams, and
+            operations stakeholders to build systems that are not only fast
+            to launch, but also stable, scalable, and maintainable over time.
           </p>
 
           <p>
-            Early in our journey, we partnered with a digital lending platform
-            transitioning from manual reconciliation to automated settlement.
-            Within 12 weeks we redesigned payment flows, introduced automated
+            One of our early engagements involved a digital lending platform
+            moving from manual reconciliation to automated settlement.
+            Within weeks, we redesigned payment flows, introduced system-level
             controls, and significantly reduced operational overhead.
           </p>
 
           <p>
-            Since then our work has expanded into areas including payments,
-            embedded finance platforms, credit infrastructure, compliance
-            tooling, and financial analytics systems.
+            Today, our work spans payments infrastructure, embedded finance,
+            credit systems, compliance tooling, and financial data platforms—
+            supporting teams at different stages of growth.
           </p>
 
           <div className="border border-gold/20 rounded-xl p-5 bg-black/10">
@@ -62,10 +60,10 @@ function About({ setPage }) {
             </h3>
 
             <ul className="list-decimal list-inside space-y-1 text-gray-300">
-              <li>Discovery sessions to understand product and regulatory risk.</li>
-              <li>Architecture planning focused on reliability and scale.</li>
-              <li>Iterative engineering with transparent review cycles.</li>
-              <li>Operational documentation and knowledge transfer.</li>
+              <li>Clear discovery aligned with product and regulatory needs.</li>
+              <li>Architecture designed for scale, resilience, and visibility.</li>
+              <li>Iterative development with structured feedback cycles.</li>
+              <li>Strong documentation and seamless knowledge transfer.</li>
             </ul>
           </div>
         </div>
@@ -77,22 +75,20 @@ function About({ setPage }) {
           </h2>
 
           <ul className="list-disc list-inside space-y-3 text-gray-300">
-            <li>Clarity before code.</li>
-            <li>Systems designed for long-term reliability.</li>
-            <li>Respect for financial regulation and governance.</li>
-            <li>Transparent collaboration with internal teams.</li>
-            <li>Practical engineering over unnecessary complexity.</li>
+            <li>Clarity before execution.</li>
+            <li>Systems built for long-term reliability.</li>
+            <li>Respect for compliance and governance.</li>
+            <li>Transparent collaboration with teams.</li>
+            <li>Practical solutions over unnecessary complexity.</li>
           </ul>
 
           <p className="mt-4 text-xs text-gray-400">
-            We believe strong fintech systems are built through
-            clear communication between product, engineering,
-            and compliance teams.
+            We believe strong fintech products are built through alignment
+            between product thinking, engineering discipline, and regulatory awareness.
           </p>
         </div>
 
       </section>
-
 
       {/* PROCESS */}
       <section className="max-w-7xl mx-auto px-4">
@@ -112,19 +108,19 @@ function About({ setPage }) {
           {[
             {
               title: "Discovery",
-              desc: "Understanding product goals, financial flows, and regulatory constraints."
+              desc: "Understanding product vision, financial flows, and regulatory constraints."
             },
             {
               title: "Architecture",
-              desc: "Designing systems that support scale, observability, and operational clarity."
+              desc: "Designing scalable systems with strong observability and control."
             },
             {
               title: "Engineering",
-              desc: "Iterative development with strong testing and review processes."
+              desc: "Building iteratively with performance, security, and reliability in focus."
             },
             {
               title: "Operational Handover",
-              desc: "Clear documentation, monitoring dashboards, and runbooks."
+              desc: "Documentation, monitoring, and systems your team can confidently run."
             }
           ].map((step, i) => (
             <div
@@ -154,13 +150,13 @@ function About({ setPage }) {
         <div className="glass-panel rounded-2xl p-10 text-center">
 
           <h2 className="text-3xl font-bold text-cream mb-4">
-            Let’s Build Financial Infrastructure Together
+            Let’s Build and Scale Financial Systems Together
           </h2>
 
           <p className="text-gray-300 max-w-xl mx-auto mb-6">
-            Whether you're launching a fintech product or improving an
-            existing platform, we help teams move from concept to
-            reliable production systems.
+            Whether you're launching a new fintech product or improving an
+            existing platform, we help you move from concept to reliable,
+            production-ready systems.
           </p>
 
           <button
