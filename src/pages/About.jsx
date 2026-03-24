@@ -19,7 +19,7 @@ function About({ setPage }) {
           <p className="text-gray-300 leading-relaxed text-lg">
             AAGAJ Fintech partners with financial institutions, fintech startups,
             and platform teams to design, build, and scale modern financial
-            systems—combining deep engineering with a strong product mindset.
+            systems-combining deep engineering with a strong product mindset.
           </p>
         </div>
       </section>
@@ -50,7 +50,7 @@ function About({ setPage }) {
 
           <p>
             Today, our work spans payments infrastructure, embedded finance,
-            credit systems, compliance tooling, and financial data platforms—
+            credit systems, compliance tooling, and financial data platforms-
             supporting teams at different stages of growth.
           </p>
 
