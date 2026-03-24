@@ -4,7 +4,7 @@ const POSTS = [
   {
     title: "Designing payment systems that can grow with you",
     category: "Payments",
-    read: "5 min read",
+    read: "",
     date: "March 2026",
     teaser:
       "A practical checklist for taking a payment MVP towards reliability, observability, and better partner management.",
@@ -12,7 +12,7 @@ const POSTS = [
   {
     title: "Building for audits from day one",
     category: "RegTech",
-    read: "6 min read",
+    read: "",
     date: "February 2026",
     teaser:
       "How product, engineering, and compliance teams can collaborate so evidence and reports are easy to generate later.",
@@ -20,7 +20,7 @@ const POSTS = [
   {
     title: "When to refactor your fintech core",
     category: "Engineering",
-    read: "7 min read",
+    read: "",
     date: "January 2026",
     teaser:
       "Signals that your current system is slowing delivery-and ways to improve without a risky full rewrite.",
@@ -28,7 +28,7 @@ const POSTS = [
   {
     title: "How embedded finance platforms scale",
     category: "Architecture",
-    read: "4 min read",
+    read: "",
     date: "January 2026",
     teaser:
       "Understanding service orchestration, APIs, and ledger design behind modern embedded finance products.",
