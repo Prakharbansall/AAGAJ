@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import logo from "../assets/logo.png"
 
 function Footer({ page, setPage }) {
   const navLinks = [
@@ -29,11 +30,7 @@ function Footer({ page, setPage }) {
             rel="noreferrer"
             className="text-cream font-extrabold tracking-wide text-base md:text-lg flex items-center gap-2"
           >
-            <img
-              src="/logo.svg"
-              alt="AAGAJ logo"
-              className="h-8 w-8 md:h-9 md:w-9"
-            />
+          <img src={logo} alt="AAGAJ logo" className="h-20 w-30" />
             <span className="hidden sm:inline">AAGAJ Finance</span>
           </a>
 

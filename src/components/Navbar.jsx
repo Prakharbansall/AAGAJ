@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { PAGES } from "../App";
+import logo from "../assets/logo.png"
 
 function Navbar({ page, setPage }) {
   const [open, setOpen] = useState(false);
@@ -35,9 +36,9 @@ function Navbar({ page, setPage }) {
           href="https://aagajtech.in/"
           target="_blank"
           rel="noreferrer"
-          className="text-cream font-extrabold tracking-wide text-base md:text-lg flex items-center gap-2 focus:outline-none"
+          className="text-cream font-extrabold tracking-wide text-base md:text-lg flex items-center focus:outline-none"
         >
-          <img src="/logo.svg" alt="AAGAJ logo" className="h-8 w-8 md:h-9 md:w-9" />
+          <img src={logo} alt="AAGAJ logo" className="h-20 w-30" />
           <span className="hidden sm:inline">AAGAJ Finance</span>
         </a>
 
