@@ -16,12 +16,11 @@ function Navbar({ page, setPage }) {
 
   const links = [
     ["Home",PAGES.HOME],
-    ["About", PAGES.ABOUT],
+    ["Products", PAGES.ABOUT],
     ["Services", PAGES.SERVICES],
-    ["Products", PAGES.PRODUCTS],
+    ["About", PAGES.PRODUCTS],
     ["Team", PAGES.TEAM],
     ["Blog", PAGES.BLOG],
-    ["Contact", PAGES.CONTACT],
   ];
 
   const handleNav = (p) => {
@@ -36,10 +35,10 @@ function Navbar({ page, setPage }) {
           href="https://aagajtech.in/"
           target="_blank"
           rel="noreferrer"
-          className="text-cream font-extrabold tracking-wide text-base md:text-lg flex items-center focus:outline-none"
+          className="text-cream font-extrabold tracking-wide text-base md:text-lg flex items-center focus:outline-none gap-3"
         >
-          <img src={logo} alt="AAGAJ logo" className="h-20 w-30" />
-          <span className="hidden sm:inline">AAGAJ Finance</span>
+          <img src={logo} alt="AAGAJ logo" className="h-12 w-15" />
+          <span className="hidden sm:inline">AAGAJ Fintech</span>
         </a>
 
         <div className="hidden md:flex items-center gap-4">

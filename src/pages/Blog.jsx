@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { PAGES } from "../App";
 
 const POSTS = [
   {
@@ -37,24 +38,28 @@ const POSTS = [
 
 const categories = ["All", "Payments", "RegTech", "Engineering", "Architecture"];
 
-import { PAGES } from "../App";
-
 function Blog({ setPage }) {
-
   const [subscribed, setSubscribed] = useState(false);
-const [loading, setLoading] = useState(false);
-
-
-  const handleClick = () => {
-    setLoading(true);
-
-    setTimeout(() => {
-      setSubscribed(true);
-      setLoading(false);
-    }, 1000); // 2000 ms = 2 seconds
-  };
-
+  const [loading, setLoading] = useState(false);
   const [active, setActive] = useState("All");
+
+  const [email, setEmail] = useState("");
+
+const handleClick = () => {
+  setLoading(true);
+
+  setTimeout(() => {
+    setSubscribed(true);
+    setLoading(false);
+    setEmail("");
+
+    // reset after 2 sec
+    setTimeout(() => {
+      setSubscribed(false);
+    }, 2000);
+
+  }, 1000);
+};
 
   const filtered =
     active === "All"
@@ -63,11 +68,9 @@ const [loading, setLoading] = useState(false);
 
   return (
     <section className="py-20 md:py-24 fade-up">
-
       <div className="max-w-7xl mx-auto px-4">
 
         {/* HEADER */}
-
         <header className="max-w-3xl mb-14">
           <p className="text-xs uppercase tracking-[0.3em] text-gold mb-2">
             Blog
@@ -79,15 +82,11 @@ const [loading, setLoading] = useState(false);
 
           <p className="text-gray-300 leading-relaxed">
             Short, practical notes on shipping and scaling fintech products.
-            These posts come from real project challenges and lessons we share
-            with engineering leaders and product teams.
           </p>
         </header>
 
         {/* CATEGORY FILTER */}
-
         <div className="flex flex-wrap gap-3 mb-12">
-
           {categories.map((cat) => (
             <button
               key={cat}
@@ -102,17 +101,13 @@ const [loading, setLoading] = useState(false);
               {cat}
             </button>
           ))}
-
         </div>
 
         {/* BLOG GRID */}
-
         <div className="grid md:grid-cols-3 gap-8">
 
           {/* POSTS */}
-
           <div className="md:col-span-2 space-y-6">
-
             {filtered.map((post) => (
               <article
                 key={post.title}
@@ -120,64 +115,76 @@ const [loading, setLoading] = useState(false);
               >
                 <div className="flex items-center gap-4 text-xs text-gold mb-2 uppercase tracking-wide">
                   <span>{post.category}</span>
-                  <span className="text-gray-400">{post.date}</span>
-                  <span className="text-gray-400">{post.read}</span>
                 </div>
 
                 <h2 className="text-xl text-cream font-semibold mb-2">
                   {post.title}
                 </h2>
 
-                <p className="text-sm text-gray-300 leading-relaxed mb-3">
+                <p className="text-sm text-gray-300 mb-3">
                   {post.teaser}
                 </p>
 
                 <button
                   onClick={() => setPage(PAGES.CONTACT)}
-                  className="text-gold text-sm font-medium hover:underline"
+                  className="text-gold text-sm hover:underline"
                 >
                   Read article →
                 </button>
               </article>
             ))}
-
           </div>
 
           {/* SIDEBAR */}
-
           <aside className="space-y-6">
 
             {/* Newsletter */}
-
             <div className="glass-panel rounded-2xl p-6">
-
               <h3 className="text-cream font-semibold mb-2">
                 Fintech newsletter
               </h3>
 
               <p className="text-sm text-gray-300 mb-4">
-                Occasional insights about payments architecture,
-                compliance tooling, and scaling fintech products.
+                Get insights about payments & fintech scaling.
               </p>
 
-              <input
-                placeholder="Email address"
-                className="w-full mb-3 px-3 py-2 rounded-lg bg-black/20 border border-gold/20 text-sm"
-              />
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
 
-<button
-      className="btn-gold px-4 py-2 w-full text-sm"
-      onClick={handleClick}
-      disabled={loading || subscribed}
-    >
-      {loading ? "Subscribing..." : subscribed ? "Subscribed 🎉" : "Subscribe"}
-    </button>
+                  if (!e.target.checkValidity()) {
+                    e.target.reportValidity();
+                    return;
+                  }
+
+                  handleClick();
+                }}
+              >
+<input
+  type="email"
+  placeholder="Email address"
+  required
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  className="w-full mb-3 px-3 py-2 rounded-lg bg-black/20 border border-gold/20 text-sm"
+/>
+
+                <button
+                  type="submit"
+                  className="btn-gold px-4 py-2 w-full text-sm"
+                  disabled={loading || subscribed}
+                >
+                  {loading
+                    ? "Subscribing..."
+                    : subscribed
+                    ? "Subscribed 🎉"
+                    : "Subscribe"}
+                </button>
+              </form>
             </div>
 
             {/* Topics */}
-
             <div className="glass-panel rounded-2xl p-6">
-
               <h3 className="text-cream font-semibold mb-3">
                 Popular topics
               </h3>
@@ -189,24 +196,19 @@ const [loading, setLoading] = useState(false);
                 <li>Fraud detection</li>
                 <li>Embedded finance</li>
               </ul>
-
             </div>
 
           </aside>
-
         </div>
 
         {/* CTA */}
-
         <div className="mt-20 text-center glass-panel rounded-2xl p-10">
-
-          <h2 className="text-2xl md:text-3xl text-cream font-bold mb-3">
+          <h2 className="text-2xl text-cream font-bold mb-3">
             Want more fintech insights?
           </h2>
 
-          <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-            We share practical lessons from building payment infrastructure,
-            lending platforms, and compliance tooling.
+          <p className="text-gray-300 mb-6">
+            We share practical lessons from building fintech products.
           </p>
 
           <button
@@ -215,11 +217,9 @@ const [loading, setLoading] = useState(false);
           >
             Join the newsletter
           </button>
-
         </div>
 
       </div>
-
     </section>
   );
 }

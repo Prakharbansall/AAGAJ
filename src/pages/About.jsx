@@ -8,18 +8,23 @@ function About({ setPage }) {
       <section className="max-w-7xl mx-auto px-4 fade-up">
         <div className="max-w-3xl">
           <p className="text-xs uppercase tracking-[0.3em] text-gold mb-2">
-            About
+            Platform
           </p>
 
           <h1 className="text-3xl md:text-5xl font-bold text-cream mb-5">
-            Building Financial Technology With
-            <span className="gold-text"> Clarity & Precision</span>
+            A digital framework for
+            <span className="gold-text"> fintech system design</span>
           </h1>
 
           <p className="text-gray-300 leading-relaxed text-lg">
-            AAGAJ Fintech partners with financial institutions, fintech startups,
-            and platform teams to design, build, and scale modern financial
-            systems-combining deep engineering with a strong product mindset.
+            The initiative being developed by AAGAJ Fintech Consultancy Pvt Ltd
+            focuses on creating a platform where financial technology systems
+            can be planned, structured, and explored within a unified environment.
+          </p>
+
+          <p className="text-gray-400 mt-4">
+            The objective is to move beyond fragmented approaches and towards a
+            more organised way of designing fintech systems.
           </p>
         </div>
       </section>
@@ -28,78 +33,85 @@ function About({ setPage }) {
       <section className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
 
         <div className="md:col-span-2 glass-panel p-8 rounded-2xl space-y-5 text-gray-300">
+
           <p>
-            Financial systems are complex environments where product decisions,
-            engineering architecture, and regulatory requirements intersect.
-            Our work focuses on simplifying that complexity while maintaining
-            speed, control, and reliability.
+            Financial technology systems often evolve through disconnected tools,
+            workflows, and documentation layers. This creates gaps between system
+            design, implementation, and operational understanding.
           </p>
 
           <p>
-            We work closely with product leaders, engineering teams, and
-            operations stakeholders to build systems that are not only fast
-            to launch, but also stable, scalable, and maintainable over time.
+            The platform under development is focused on bringing these elements
+            together into a structured digital environment-where workflows,
+            architecture, compliance, and documentation can be explored in a
+            connected and organised way.
           </p>
 
           <p>
-            One of our early engagements involved a digital lending platform
-            moving from manual reconciliation to automated settlement.
-            Within weeks, we redesigned payment flows, introduced system-level
-            controls, and significantly reduced operational overhead.
+            Rather than treating payments, compliance, and data systems as separate
+            concerns, the initiative aims to represent them as interconnected
+            components within a unified system framework.
           </p>
 
           <p>
-            Today, our work spans payments infrastructure, embedded finance,
-            credit systems, compliance tooling, and financial data platforms-
-            supporting teams at different stages of growth.
+            This approach is intended to support clearer system thinking, better
+            alignment across teams, and more structured decision-making during
+            fintech product development.
           </p>
 
           <div className="border border-gold/20 rounded-xl p-5 bg-black/10">
-            <h3 className="text-gold font-semibold text-sm mb-2">
-              Our approach
+            <h3 className="text-gold font-semibold text-sm mb-3">
+              Core components under development
             </h3>
 
-            <ul className="list-decimal list-inside space-y-1 text-gray-300">
-              <li>Clear discovery aligned with product and regulatory needs.</li>
-              <li>Architecture designed for scale, resilience, and visibility.</li>
-              <li>Iterative development with structured feedback cycles.</li>
-              <li>Strong documentation and seamless knowledge transfer.</li>
+            <ul className="list-disc list-inside space-y-2 text-gray-300">
+              <li>Financial workflow mapping for payments, settlements, and reporting.</li>
+              <li>System architecture exploration across different fintech use cases.</li>
+              <li>Integration of compliance structures such as KYC, AML, and audit trails.</li>
+              <li>Alignment between evolving system design and technical documentation.</li>
             </ul>
           </div>
+
         </div>
 
-        {/* VALUES */}
+        {/* SIDE BLOCK (TECH DIRECTION) */}
         <div className="glass-panel p-6 rounded-2xl text-sm text-gray-200">
+
           <h2 className="text-cream font-semibold mb-4">
-            What we value
+            Technology direction
           </h2>
 
+          <p className="text-gray-300 mb-4">
+            The platform is being developed as a modular system architecture,
+            where different components interact within a unified framework.
+          </p>
+
           <ul className="list-disc list-inside space-y-3 text-gray-300">
-            <li>Clarity before execution.</li>
-            <li>Systems built for long-term reliability.</li>
-            <li>Respect for compliance and governance.</li>
-            <li>Transparent collaboration with teams.</li>
-            <li>Practical solutions over unnecessary complexity.</li>
+            <li>Scalable backend services for financial workflows</li>
+            <li>Cloud-based infrastructure for flexibility and reliability</li>
+            <li>Modular APIs for integration with external systems</li>
+            <li>Adaptable architecture for different fintech use cases</li>
           </ul>
 
           <p className="mt-4 text-xs text-gray-400">
-            We believe strong fintech products are built through alignment
-            between product thinking, engineering discipline, and regulatory awareness.
+            This approach is intended to support long-term scalability and
+            adaptability across evolving financial technology environments.
           </p>
+
         </div>
 
       </section>
 
-      {/* PROCESS */}
+      {/* PROCESS (REUSED BUT REFRAMED) */}
       <section className="max-w-7xl mx-auto px-4">
 
         <div className="max-w-2xl mb-10">
           <p className="text-xs uppercase tracking-[0.3em] text-gold mb-2">
-            Process
+            Platform approach
           </p>
 
           <h2 className="text-3xl font-bold text-cream">
-            How We Work
+            How the system is being structured
           </h2>
         </div>
 
@@ -107,20 +119,20 @@ function About({ setPage }) {
 
           {[
             {
-              title: "Discovery",
-              desc: "Understanding product vision, financial flows, and regulatory constraints."
+              title: "Workflow Mapping",
+              desc: "Defining financial processes such as payments, settlements, and reporting."
             },
             {
-              title: "Architecture",
-              desc: "Designing scalable systems with strong observability and control."
+              title: "Architecture Design",
+              desc: "Exploring system structures across different fintech use cases."
             },
             {
-              title: "Engineering",
-              desc: "Building iteratively with performance, security, and reliability in focus."
+              title: "Compliance Integration",
+              desc: "Embedding regulatory workflows within system design."
             },
             {
-              title: "Operational Handover",
-              desc: "Documentation, monitoring, and systems your team can confidently run."
+              title: "Documentation Layer",
+              desc: "Maintaining alignment between system evolution and documentation."
             }
           ].map((step, i) => (
             <div
@@ -150,20 +162,19 @@ function About({ setPage }) {
         <div className="glass-panel rounded-2xl p-10 text-center">
 
           <h2 className="text-3xl font-bold text-cream mb-4">
-            Let’s Build and Scale Financial Systems Together
+            Be part of the platform journey
           </h2>
 
           <p className="text-gray-300 max-w-xl mx-auto mb-6">
-            Whether you're launching a new fintech product or improving an
-            existing platform, we help you move from concept to reliable,
-            production-ready systems.
+            Request early access to follow the development of this platform
+            and explore how fintech systems can be structured more effectively.
           </p>
 
           <button
             className="btn-gold px-8 py-3"
             onClick={() => setPage(PAGES.CONTACT)}
           >
-            Start the Conversation
+            Request Early Access
           </button>
 
         </div>

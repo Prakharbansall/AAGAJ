@@ -4,9 +4,9 @@ import logo from "../assets/logo.png"
 function Footer({ page, setPage }) {
   const navLinks = [
     ["Home", "home"],
-    ["About", "about"],
+    ["About", "products"],
     ["Services", "services"],
-    ["Products", "products"],
+    ["Products", "about"],
     ["Team", "team"],
     ["Blog", "blog"],
     ["Contact", "contact"],
@@ -30,8 +30,7 @@ function Footer({ page, setPage }) {
             rel="noreferrer"
             className="text-cream font-extrabold tracking-wide text-base md:text-lg flex items-center gap-2"
           >
-          <img src={logo} alt="AAGAJ logo" className="h-20 w-30" />
-            <span className="hidden sm:inline">AAGAJ Finance</span>
+          <img src={logo} alt="AAGAJ logo" className="h-15 w-20" /> 
           </a>
 
           <h3 className="text-gold font-semibold mb-3">
